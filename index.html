@@ -3,113 +3,67 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Family Memories ❤️</title>
+<title>Our Family Story ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- Background Music -->
+<!-- Loading Screen -->
 
-    <audio id="bgMusic" loop>
-        <source src="music/family.mp3" type="audio/mpeg">
-    </audio>
+<div id="loader">
 
-    <!-- Welcome Section -->
+    <div class="heart">❤️</div>
 
-    <section class="welcome">
+    <h1>Loading Memories...</h1>
 
-        <div class="overlay">
+</div>
 
-            <h1>❤️ Family Memories ❤️</h1>
+<!-- Intro Screen -->
 
-            <h2>A Journey Filled With Love</h2>
+<section id="intro">
 
-            <p>
+    <div class="stars"></div>
 
-                Every picture tells a story...
+    <div class="content">
 
-                Every smile holds a memory...
+        <h3 class="fade">Some memories never fade...</h3>
 
-                Every memory lives forever.
+        <h3 class="fade delay1">Some bonds never break...</h3>
 
-            </p>
+        <h1 class="fade delay2">❤️ Our Family Story ❤️</h1>
 
-            <button id="startBtn">
+        <p class="fade delay3">
 
-                Begin Our Journey
+            Every smile...
 
-            </button>
+            Every hug...
 
-        </div>
+            Every memory...
 
-    </section>
+            Lives forever.
 
-    <!-- Slideshow -->
+        </p>
 
-    <section id="gallery" class="hidden">
+        <button id="beginBtn">
 
-        <div class="slideshow">
+            Begin Our Journey
 
-            <img id="slideImage"
-                src="images/photo1.jpg"
-                alt="Family">
+        </button>
 
-            <div class="caption">
+    </div>
 
-                <h2 id="quote">
+</section>
 
-                    Family is where life begins and love never ends ❤️
-
-                </h2>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Ending -->
-
-    <section id="ending" class="hidden">
-
-        <div class="end-content">
-
-            <h1>❤️ Thank You ❤️</h1>
-
-            <p>
-
-                No matter where life takes us,
-
-                our family will always be our greatest blessing.
-
-            </p>
-
-            <h2>
-
-                I Love My Family Forever ❤️
-
-            </h2>
-
-            <p class="signature">
-
-                ~ Keerthi
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
