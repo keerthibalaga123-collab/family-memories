@@ -78,13 +78,19 @@ beginBtn.addEventListener("click", () => {
 
 function showGallery() {
 
-    document.body.innerHTML = `
+  document.body.innerHTML = `
 
 <div id="gallery">
 
-<img id="photo" src="${photos[0]}">
+    <div class="overlay"></div>
 
-<h2 id="caption">${quotes[0]}</h2>
+    <img id="photo" src="${photos[0]}">
+
+    <div class="quoteBox">
+
+        <h2 id="caption">${quotes[0]}</h2>
+
+    </div>
 
 </div>
 
