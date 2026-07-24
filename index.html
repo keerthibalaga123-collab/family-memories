@@ -10,56 +10,131 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
-<div class="hearts"></div>
+
 <body>
 
 <!-- Loading Screen -->
 
 <div id="loader">
 
-    <div class="heart">❤️</div>
+    <div class="loader-heart">❤️</div>
 
     <h1>Loading Memories...</h1>
 
 </div>
 
-<!-- Intro Screen -->
+<!-- Floating Hearts -->
+
+<div id="floating-hearts"></div>
+
+<!-- Intro Section -->
 
 <section id="intro">
 
     <div class="stars"></div>
 
-    <div class="content">
+    <div class="intro-content">
 
-        <h3 class="fade">Some memories never fade...</h3>
+        <h3 class="line1">
+            Some memories never fade...
+        </h3>
 
-        <h3 class="fade delay1">Some bonds never break...</h3>
+        <h3 class="line2">
+            Some bonds never break...
+        </h3>
 
-        <h1 class="fade delay2">❤️ Our Family Story ❤️</h1>
+        <h1 class="title">
+            ❤️ Our Family Story ❤️
+        </h1>
 
-        <p class="fade delay3">
-
-            Every smile...
-
-            Every hug...
-
-            Every memory...
-
-            Lives forever.
-
+        <p class="subtitle">
+            Every smile... Every hug... Every memory... Lives forever.
         </p>
 
-        <button id="beginBtn">
-
+        <button id="startBtn">
             Begin Our Journey
-
         </button>
 
     </div>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery">
+
+<div class="gallery-container">
+
+<img id="photo" src="images/photo1.jpg" alt="Family">
+
+<div class="quote-box">
+
+<h2 id="quote"></h2>
+
+<p id="counter"></p>
+
+</div>
+
+<div class="controls">
+
+<button id="prevBtn">
+⏮ Previous
+</button>
+
+<button id="nextBtn">
+Next ⏭
+</button>
+
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Ending -->
+
+<section id="ending">
+
+<div class="ending-content">
+
+<h1>❤️ Thank You ❤️</h1>
+
+<p>
+
+No matter where life takes us,
+
+our hearts always find their way home.
+
+</p>
+
+<h2>
+
+I Love My Family Forever ❤️
+
+</h2>
+
+<h3>
+
+~ Keerthi
+
+</h3>
+
+<button onclick="location.reload()">
+
+Watch Again ❤️
+
+</button>
+
+</div>
 
 </section>
 
