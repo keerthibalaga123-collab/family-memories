@@ -86,11 +86,17 @@ function showGallery() {
 
     <img id="photo" src="${photos[0]}">
 
-    <div class="quoteBox">
+    </div><div class="quoteBox">
 
-        <h2 id="caption">${quotes[0]}</h2>
+    <h2 id="caption">${quotes[0]}</h2>
 
-    </div>
+    <h4 id="counter">
+
+        Photo 1 / 13
+
+    </h4>
+
+</div>
 
 </div>
 
@@ -124,7 +130,8 @@ function slideShow() {
 
             image.src = photos[current];
 
-            caption.innerHTML = quotes[current];
+           document.getElementById("counter").innerHTML =
+`Photo ${current+1} / ${photos.length}`;
 
             image.style.opacity = 1;
 
