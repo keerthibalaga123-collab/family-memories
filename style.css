@@ -1,3 +1,6 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -6,176 +9,279 @@
 }
 
 body{
-    background:#000;
+
     overflow:hidden;
-    color:#fff;
-}
-
-/* Welcome Screen */
-
-.welcome{
-    width:100%;
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url("https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.overlay{
-    max-width:700px;
-    padding:20px;
-}
-
-.overlay h1{
-    font-size:60px;
-    color:#ff4d6d;
-    margin-bottom:20px;
-}
-
-.overlay h2{
-    font-size:34px;
-    margin-bottom:20px;
-}
-
-.overlay p{
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:40px;
-}
-
-#startBtn{
-    padding:15px 45px;
-    border:none;
-    border-radius:50px;
-    background:#ff4d6d;
+    background:#000;
     color:white;
-    font-size:20px;
-    cursor:pointer;
-    transition:.4s;
+
 }
 
-#startBtn:hover{
-    background:#ff1744;
-    transform:scale(1.08);
-}
+/* ---------------- LOADER ---------------- */
 
-/* Gallery */
+#loader{
 
-#gallery{
+    position:fixed;
     width:100%;
     height:100vh;
+
+    background:black;
+
     display:flex;
+    flex-direction:column;
+
     justify-content:center;
     align-items:center;
-    background:#111;
+
+    z-index:100;
+
 }
 
-.slideshow{
-    text-align:center;
+.heart{
+
+    font-size:90px;
+
+    animation:heartbeat 1s infinite;
+
 }
 
-.slideshow img{
-    width:70%;
-    max-height:70vh;
-    border-radius:20px;
-    box-shadow:0 0 30px rgba(255,255,255,.25);
-    animation:fade 2s;
-}
+#loader h1{
 
-.caption{
-    margin-top:30px;
-}
+    margin-top:25px;
 
-.caption h2{
     font-size:30px;
-    color:#ffd6e0;
+
+    letter-spacing:2px;
+
 }
 
-.hidden{
-    display:none;
-}
+/* ---------------- INTRO ---------------- */
 
-/* Ending */
+#intro{
 
-#ending{
     width:100%;
     height:100vh;
+
     display:flex;
+
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(135deg,#000000,#12001e,#2d0b45,#000000);
+
+}
+
+/* ---------- Stars ---------- */
+
+.stars{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background-image:
+    radial-gradient(white 1px,transparent 1px);
+
+    background-size:45px 45px;
+
+    animation:stars 40s linear infinite;
+
+    opacity:.45;
+
+}
+
+/* ---------- Content ---------- */
+
+.content{
+
     text-align:center;
+
+    z-index:2;
+
+    padding:30px;
+
 }
 
-.end-content{
-    max-width:700px;
+.content h3{
+
+    font-size:30px;
+
+    margin:20px;
+
+    color:#ffffff;
+
 }
 
-.end-content h1{
-    font-size:60px;
-    margin-bottom:20px;
+.content h1{
+
+    font-size:70px;
+
+    color:#ff4d88;
+
+    margin:35px 0;
+
+    text-shadow:
+    0 0 15px #ff4d88,
+    0 0 40px #ff4d88;
+
 }
 
-.end-content p{
-    font-size:24px;
-    line-height:1.8;
-    margin-bottom:20px;
+.content p{
+
+    font-size:22px;
+
+    line-height:2;
+
+    margin-bottom:45px;
+
 }
 
-.signature{
-    margin-top:30px;
-    font-size:28px;
-    font-weight:bold;
+/* ---------- Button ---------- */
+
+#beginBtn{
+
+    padding:18px 55px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:#ff4d88;
+
+    color:white;
+
+    transition:.4s;
+
+    box-shadow:
+    0 0 20px #ff4d88;
+
 }
 
-/* Animation */
+#beginBtn:hover{
 
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:scale(.95);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
+    transform:scale(1.08);
+
+    background:#ff1e6c;
+
 }
 
-/* Responsive */
+/* ---------- Fade ---------- */
+
+.fade{
+
+    opacity:0;
+
+    animation:fadeIn 2s forwards;
+
+}
+
+.delay1{
+
+    animation-delay:2s;
+
+}
+
+.delay2{
+
+    animation-delay:4s;
+
+}
+
+.delay3{
+
+    animation-delay:6s;
+
+}
+
+/* ---------------- Animations ---------------- */
+
+@keyframes heartbeat{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.2);}
+
+100%{transform:scale(1);}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes stars{
+
+from{
+
+background-position:0 0;
+
+}
+
+to{
+
+background-position:0 1000px;
+
+}
+
+}
+
+/* ---------- Responsive ---------- */
 
 @media(max-width:768px){
 
-.overlay h1{
-    font-size:40px;
+.content h1{
+
+font-size:42px;
+
 }
 
-.overlay h2{
-    font-size:24px;
+.content h3{
+
+font-size:22px;
+
 }
 
-.overlay p{
-    font-size:18px;
+.content p{
+
+font-size:18px;
+
 }
 
-.slideshow img{
-    width:90%;
+#beginBtn{
+
+font-size:18px;
+
+padding:15px 35px;
+
 }
 
-.caption h2{
-    font-size:22px;
-}
+.heart{
 
-.end-content h1{
-    font-size:40px;
-}
+font-size:65px;
 
-.end-content p{
-    font-size:18px;
 }
 
 }
