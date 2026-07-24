@@ -18,64 +18,50 @@ const beginBtn = document.getElementById("beginBtn");
 
 const quotes = [
 
-"The beginning of our beautiful family ❤️",
+"❤️ The beginning of our beautiful family.",
 
-"A daughter who fills every day with happiness ❤️",
+"🌸 Every daughter is a reflection of her family's love.",
 
-"A brother who is a friend forever ❤️",
+"💙 A brother is a forever friend.",
 
-"A mother's love is endless ❤️",
+"🤍 A mother's hug lasts forever.",
 
-"Growing with dreams and happiness ❤️",
+"✨ Every smile creates another beautiful memory.",
 
-"A father's love is silent but priceless ❤️",
+"💖 A father's love is silent but priceless.",
 
-"Every smile creates another memory ❤️",
+"😊 Happiness grows with every passing day.",
 
-"Partners in childhood... Friends forever ❤️",
+"❤️ Childhood is always better with a brother.",
 
-"Together every moment becomes special ❤️",
+"👨‍👧‍👦 Together, we make every moment unforgettable.",
 
-"Dream big... Smile always ❤️",
+"🌟 Dream. Smile. Shine.",
 
-"Family is life's greatest blessing ❤️",
+"💙 Family is life's greatest blessing.",
 
-"Love grows stronger every day ❤️",
+"💕 Every memory is a treasure.",
 
-"Family isn't just important... It's everything ❤️"
+"❤️ Family isn't just important... It's everything."
 
 ];
 
 // ---------------- Photos ----------------
 
 const photos = [
-
-"images/photo1.jpg",
-
-"images/photo2.jpg",
-
-"images/photo3.jpg",
-
-"images/photo4.jpg",
-
-"images/photo5.jpg",
-
-"images/photo6.jpg",
-
-"images/photo7.jpg",
-
-"images/photo8.jpg",
-
-"images/photo9.jpg",
-
-"images/photo10.jpg",
-
-"images/photo11.jpg",
-
-"images/photo12.jpg",
-
-"images/photo13.jpg"
-
+    "images/photo1.jpg",
+    "images/photo2.jpg",
+    "images/photo3.jpg",
+    "images/photo4.jpg",
+    "images/photo5.jpg",
+    "images/photo6.jpg",
+    "images/photo7.jpg",
+    "images/photo8.jpg",
+    "images/photo9.jpg",
+    "images/photo10.jpg",
+    "images/photo11.jpg",
+    "images/photo12.jpg",
+    "images/photo13.jpg"
 ];
 
 let current = 0;
@@ -138,7 +124,7 @@ function slideShow() {
 
         }, 800);
 
-    }, 5000);
+  },7000);
 
 }
 
