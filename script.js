@@ -183,9 +183,7 @@ function createHeart() {
     document.getElementById("hearts").appendChild(heart);
 
     setTimeout(() => {
-
         heart.remove();
-
     }, 8000);
 
 }
